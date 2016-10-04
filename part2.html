@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        h1 {color: black}
+        .camps {background: lightyellow; border-width: 10px ; border-color: yellow; margin-bottom: 10px; width: 720px}
+        .a {display: inline-block; text-align: right; vertical-align: top ; width: 180px}
+        .b {width: auto}
+        .c {width: 360px; height: 50px;}
+        .d {text-align: center}
+    </style>
+    <title>Course 1 Project HTML website design</title>
+    <h1>Please Enter Your Details For Our Dating Website!</h1>
+</head>
+
+<body>
+<section>
+<form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="get" enctype="multipart/form-data" autocomplete="on">
+    <fieldset class="camps">
+        <legend>Your face</legend>
+        <table>
+        <tr><lable for="picture" class="a"> Your image : </lable> <input type="file" id="picture" accept="image/jpeg, image/png, image/gif"></tr> <br>
+        <tr><lable for="preview" class="a"> Image preview: </lable> <input type="image" id="preview" value="No Preview"></tr>
+        </table>
+    </fieldset>
+    <br>
+
+    <fieldset class="camps">
+        <legend>Your General Details</legend>
+        <table>
+            <tr><lable for="name" class="a"> Name : </lable> <input type="text" id="name" required></tr> <br>
+        <tr><label for="gender" class="a"> Gender : </label> <input type="radio" id="male" class="b" required>Male <input type="radio" id="female" class="b" required>Female</tr> <br>
+        <tr><lable for="age" class="a"> Age : </lable> <input type="number" id="age" required></tr> <br>
+        <tr><lable for="dob" class="a"> Date of Birth : </lable> <input type="date" id="dob" required></tr> <br>
+        <tr><lable for="color" class="a"> Favorite color : </lable> <input type="color" id="color"></tr> <br>
+        <tr><label for="country" class="a"> Which Country : </label>
+        <select>
+            <option value="0"></option>
+            <option value="1">North American Countries</option>
+            <option value="2">European Countries</option>
+            <option value="3">Asian Countries</option>
+            <option value="4">African Countries</option>
+            <option value="5">Australia and Carribean Countries</option>
+            <option value="6">South American Countries</option>
+            <option value="7">I'm an Alien</option>
+        </select>
+        </tr>
+        </table>
+    </fieldset>
+    <br>
+
+    <fieldset class="camps">
+        <legend>Your Indicators</legend>
+        <label>
+        <tr><label for="height" class="a">Height : </label>
+                <label style="background: red; color: white"> Short </label>
+                    <input type="range" min="0" max="100" step="1" id="height" class="d a">
+                <label style="background: darkviolet; color: white"> Tall </label> </tr><br>
+        <tr><lable for="salary" class="a">Salary : </lable>
+                <lable style="background: red; color: white"> Poor </lable>
+                    <input type="range" min="0" max="100" id="salary" class="d a">
+                <label style="background: darkviolet; color: white"> Rich </label> </tr>
+        </table>
+    </fieldset>
+    <br>
+
+    <fieldset class="camps">
+        <legend>Your Contact Information</legend>
+        <table>
+        <tr><lable for="mail" class="a">Email : </lable> <input type="email" id="mail" required></tr> <br>
+        <tr><lable for="phone" class="a">Mobile : </lable> <input type="tel" id="phone" required></tr> <br>
+        <tr><lable for="address" class="a">Address : </lable> <textarea id="address" class="c" required> </textarea></tr> <br>
+        <tr><label for="ways" class="a">Methods to contact You : </label>
+            <input type="checkbox" name="ways" value="email" class="b">Email
+            <input type="checkbox" name="ways" value="whatsapp" class="b">WhatsApp
+            <input type="checkbox" name="ways" value="in_app_chat" class="b">In App Chat
+        </tr>
+        </table>
+    </fieldset>
+    <br>
+
+<input type="submit" value="Submit!">
+</form>
+</section>
+</body>
+</html>
